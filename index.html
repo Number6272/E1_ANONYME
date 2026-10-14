@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebCraft Solutions</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -11,7 +14,10 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="Menu principal">
         <div class="container">
-            <a class="navbar-brand" href="index.html">WebCraft Solutions</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Logo WebCraft Solutions" class="logo">
+                WebCraft Solutions
+            </a>
 
             <button
                 class="navbar-toggler"
@@ -35,6 +41,141 @@
     </nav>
 </header>
 
-</body>
+<main>
 
+
+    <section class="hero">
+        <h1>Bienvenue chez WebCraft Solutions</h1>
+        <p>Nos projets clients et nos formations techniques</p>
+
+    </section>
+
+
+    <section id="projets" class="container">
+
+        <h2>Nos projets</h2>
+
+        <div class="row">
+            <div class="col-md-4">
+                <label for="recherche-projet">Recherche</label>
+                <input
+                    type="text"
+                    id="recherche-projet"
+                    class="form-control"
+                    placeholder="Titre du projet"
+                >
+            </div>
+
+
+            <div class="col-md-4">
+                <label for="techno-projet">Technologie</label>
+                <select id="techno-projet" class="form-select">
+                    <option value="">Toutes</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+
+                <label for="categorie-projet">Catégorie</label>
+                <select id="categorie-projet" class="form-select">
+                    <option value="">Toutes</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="loader" id="loader-projets"></div>
+        <p class="erreur-api" id="erreur-projets"></p>
+
+        <div class="row" id="liste-projets"></div>
+        
+    </section>
+
+
+
+
+    <section id="formations" class="container">
+
+        <h2>Nos formations</h2>
+
+        <div class="row">
+
+            <div class="col-md-3">
+
+                <label for="recherche-formation">Recherche</label>
+                <input
+                    type="text"
+                    id="recherche-formation"
+                    class="form-control"
+                    placeholder="Titre de la formation"
+                >
+            </div>
+
+            <div  class="col-md-3">
+                <label for="categorie-formation">Catégorie</label>
+                <select id="categorie-formation" class="form-select">
+                    <option value="">Toutes</option>
+                </select>
+            </div >
+
+            <div class ="col-md-3">
+                <label for="niveau-formation">Niveau</label>
+                <select id="niveau-formation" class="form-select">
+                    <option value="">Tous</option>
+                </select>
+            </div>
+
+
+            <div class="col-md-3">
+                <label for="techno-formation">Technologie</label>
+                <select id="techno-formation" class="form-select">
+                    <option value="">Toutes</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="loader" id="loader-formations"></div>
+        <p class="erreur-api" id="erreur-formations"></p>
+
+        <div class="row" id="liste-formations"></div>
+    </section>
+
+</main>
+
+
+
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal-titre">
+    <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modal-titre">Détails</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+
+            <div class="modal-body" id="modal-contenu"></div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<footer>
+
+
+
+    <ul>
+        <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+        <li><a href="https://github.com">GitHub</a></li>
+        <li><a href="https://www.instagram.com">Instagram</a></li>
+    </ul>
+
+    <p>&copy; 2026 WebCraft Solutions - Tous droits réservés.</p>
+
+</footer>
+
+
+
+
+</body>
 </html>
