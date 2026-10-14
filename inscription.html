@@ -13,7 +13,7 @@
 
 <body>
 
-    
+
 <header>
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="Menu principal">
         <div class="container">
@@ -46,7 +46,169 @@
 
 
 
-<main>
+<main class="container">
+
+    <h1>Inscription</h1>
+    <p>Les champs avec * sont obligatoires.</p>
+
+
+    <form id="inscription-form" action="#" method="post" novalidate>
+
+
+        <fieldset>
+
+            <legend>Informations</legend>
+
+
+            <div class="form-group">
+                <label for="prenom">Prénom *</label>
+                <input
+                    type="text"
+                    id="prenom"
+                    name="prenom"
+                    class="form-control"
+                    placeholder="Votre prénom"
+                >
+                <p class="erreur" id="erreur-prenom"></p>
+
+            </div>
+
+            <div class="form-group">
+                <label for="nom">Nom *</label>
+                <input
+                    type="text"
+                    id="nom"
+                    name="nom"
+                    class="form-control"
+                    placeholder="Votre nom"
+                >
+                <p class="erreur" id="erreur-nom"></p>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="email">Email *</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Votre email"
+                >
+                <p class="erreur" id="erreur-email"></p>
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="telephone">Téléphone *</label>
+                <input
+                    type="tel"
+                    id="telephone"
+                    name="telephone"
+                    class="form-control"
+                    placeholder="+33612345678"
+                >
+                <p class="erreur" id="erreur-telephone"></p>
+            
+            </div>
+        
+        </fieldset>
+
+        <br>
+
+        
+        
+        <fieldset>
+
+            <legend>Formation</legend>
+
+            <div class="form-group">
+                <label for="formation">Formation *</label>
+                <select id="formation" name="formation" class="form-select">
+                    <option value="">Choisissez une formation</option>
+                </select>
+                <p class="erreur" id="erreur-formation"></p>
+            </div>
+
+
+
+
+            <div class="form-group">
+                <label for="niveau">Niveau *</label>
+                <select id="niveau" name="niveau" class="form-select">
+                    <option value="">Choisissez un niveau</option>
+                    <option value="Débutant">Débutant</option>
+                    <option value="Intermédiaire">Intermédiaire</option>
+                    <option value="Avancé">Avancé</option>
+                </select>
+
+
+                <p class="erreur" id="erreur-niveau"></p>
+            </div>
+
+
+            <div class="form-group">
+
+
+                <label for="motivation">Motivation * (50 caractères minimum)</label>
+                <textarea
+                    id="motivation"
+                    name="motivation"
+                    class="form-control"
+                    rows="5"
+                    placeholder="Pourquoi cette formation ?"
+                ></textarea>
+                <p class="erreur" id="erreur-motivation"></p>
+            </div>
+
+        </fieldset>
+
+        <br>
+
+
+
+
+
+        <fieldset>
+            <legend>Optionnel</legend>
+
+            <div class="form-group">
+                <label for="entreprise">Entreprise</label>
+                <input
+                    type="text"
+                    id="entreprise"
+                    name="entreprise"
+                    class="form-control"
+                >
+            </div>
+
+
+            <div class="form-group">
+
+
+                <label for="experience">Expérience (en années)</label>
+                <input
+                    type="number"
+                    id="experience"
+                    name="experience"
+                    class="form-control"
+                    min="0"
+                >
+            </div>
+
+            
+        </fieldset>
+
+        <br>
+
+        <button type="submit" class="btn btn-primary">S'inscrire</button>
+        <button type="reset" class="btn btn-secondary">Réinitialiser</button>
+
+    </form>
 
 </main>
 
